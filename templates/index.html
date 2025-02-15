@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu ka Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="cyber-grid"></div>
+        <div class="floating-elements"></div>
+        <div class="glitch-title" data-text="HIMANSHU_CALC">HIMANSHU_CALC</div>
+        <div class="sub-title">QUANTUM COMPUTATION SYSTEM</div>
+        <div class="calculator">
+            <div class="glow-effect"></div>
+            <div class="circuit-lines"></div>
+            <div class="display">
+                <div class="terminal-prefix">[himanshu@calc]$</div>
+                <div class="previous-operand"></div>
+                <div class="current-operand">0</div>
+            </div>
+            <div class="keypad">
+                <button class="btn function" data-action="clear">CLR</button>
+                <button class="btn function" data-action="delete">DEL</button>
+                <button class="btn operator" data-action="divide">÷</button>
+                <button class="btn operator" data-action="multiply">×</button>
+
+                <button class="btn number">7</button>
+                <button class="btn number">8</button>
+                <button class="btn number">9</button>
+                <button class="btn operator" data-action="subtract">-</button>
+
+                <button class="btn number">4</button>
+                <button class="btn number">5</button>
+                <button class="btn number">6</button>
+                <button class="btn operator" data-action="add">+</button>
+
+                <button class="btn number">1</button>
+                <button class="btn number">2</button>
+                <button class="btn number">3</button>
+                <button class="btn operator" data-action="calculate">=</button>
+
+                <button class="btn number zero">0</button>
+                <button class="btn number">.</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/audio.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/calculator.js') }}"></script>
+</body>
+</html>
